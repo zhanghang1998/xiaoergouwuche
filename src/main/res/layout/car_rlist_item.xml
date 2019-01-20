@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/car_rlist_shape"
+    android:padding="10dp">
+
+
+    <CheckBox
+        android:id="@+id/cart_goods_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView_simple"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:minHeight="50dp"
+        android:layout_toRightOf="@+id/cart_goods_check"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textView_car_rlist_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/imageView_simple"
+        android:text="TextView"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/textView_car_rlist_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView_car_rlist_count"
+        android:layout_toRightOf="@+id/imageView_simple"
+        android:text="TextView"
+        android:padding="10dp"
+        android:textColor="#F00" />
+
+    <zyh.com.view.MyRecyclerView
+        android:id="@+id/add_sub_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@+id/textView_car_rlist_count"
+        android:layout_alignParentRight="true">
+
+    </zyh.com.view.MyRecyclerView>
+
+</RelativeLayout>
